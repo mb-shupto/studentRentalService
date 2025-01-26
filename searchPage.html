@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Room Rental Service</title>
+    <title>Student Rental Service</title>
     <style>
         body {
             font-family: 'Times New Roman', Times, serif, sans-serif;
@@ -94,39 +94,47 @@
 </head>
 <body>
     <header>
-        Student Room Rental Service
+        Student Rental Service
     </header>
     <div class="container">
-        <h2>Find Your Room</h2>
-        <form id="search-form">
-            <label for="location">Location:</label>
-            <input type="text" id="location" name="location" placeholder="Enter city or area">
-
-            <label for="price-range">Price Range:</label>
-            <input type="text" id="price-range" name="price-range" placeholder="e.g., 300-700">
-
-            <label for="room-type">Room Type:</label>
-            <select id="room-type" name="room-type">
+        <h2 style="text-align: center; color: #43434d; font-size: 24px; margin-bottom: 20px;">Find Your Place</h2>
+        <form id="search-form" style="font-size: 16px;">
+            <label for="location" style="font-weight: bold;">Preferred Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter your preferred area or block" style="padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ddd;">
+    
+            <label for="price-range" style="font-weight: bold;">Price Range (in BDT):</label>
+            <input type="text" id="price-range" name="price-range" placeholder="e.g., 3000-15000" style="padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ddd;">
+    
+            <label for="room-type" style="font-weight: bold;">Room Type:</label>
+            <select id="room-type" name="room-type" style="padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ddd;">
                 <option value="">Any</option>
                 <option value="single">Single</option>
                 <option value="shared">Shared</option>
+                <option value="partition">Partitioned</option>
                 <option value="full">Full House</option>
+                <option value="studio">Studio Room</option>
             </select>
-
-            <label>Amenities:</label>
-            <div class="amenities-options">
-                <label><input type="checkbox" id="wifi" name="amenities" value="wifi"> WiFi</label>
-                <label><input type="checkbox" id="parking" name="amenities" value="parking"> Parking</label>
-                <label><input type="checkbox" id="ac" name="amenities" value="ac"> Air Conditioning</label>
+    
+            <label style="font-weight: bold;">Extra Facilities:</label>
+            <div class="facility" style="margin-bottom: 15px;">
+                <label style="display: inline-block; margin-right: 10px;"><input type="checkbox" id="wifi" name="facility" value="wifi" style="margin-right: 5px;"> WiFi</label>
+                <label style="display: inline-block; margin-right: 10px;"><input type="checkbox" id="parking" name="facility" value="parking" style="margin-right: 5px;"> Parking</label>
+                <label style="display: inline-block; margin-right: 10px;"><input type="checkbox" id="ac" name="facility" value="ac" style="margin-right: 5px;"> Air Conditioning</label>
+                <label style="display: inline-block; margin-right: 10px;"><input type="checkbox" id="maid" name="facility" value="maid" style="margin-right: 5px;"> Maid Service</label>
+                <label style="display: inline-block; margin-right: 10px;"><input type="checkbox" id="water" name="facility" value="water" style="margin-right: 5px;"> Drinking Water</label>
             </div>
-
-            <button type="submit">Search</button>
+    
+            <button type="submit" style="padding: 12px 20px; background-color: #43434d; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                Search
+            </button>
         </form>
+    </div>
+    
 
         <h1>Others</h1>
 
-<p><a href="ReviewUI 1.1.html">Leave Us a Review! </a></p>
-<p><a href="Contact.html">Contact Us </a></p>
+<p><a href="./review.html">Leave Us a Review! </a></p>
+<p><a href="./contact.html">Contact Us </a></p>
 
 </body>
 </html>
@@ -135,7 +143,7 @@
     
 
     <footer>
-        &copy; 2024 Student Room Rental Service. All rights reserved.
+        &copy; 2025 Student Room Rental Service. All rights reserved.
     </footer>
 
     <script>
