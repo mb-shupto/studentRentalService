@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student House Rental Service</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x800/?student,home') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(42, 96, 151);
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .hero button:hover {
+            background-color: #ffc107;
+        }
+        .features {
+            padding: 40px 20px;
+            background-color: #007bff;
+            text-align: center;
+        }
+        .features h2 {
+            margin-bottom: 20px;
+        }
+        .features .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .features .feature {
+            background: rgb(255, 255, 255);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .features .feature h3 {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student Rooms</div>
+            <ul>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+            <h1>Find Your Perfect Student Space</h1>
+            <p>Affordable rooms, convenient locations, and all the amenities you need.</p>
+            <button onclick="window.location.href='#search'">Get Started</button>
+        </div>
+    </section>
+    <section class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Affordable Pricing</h3>
+                <p>Rooms and houses that fit your budget.</p>
+            </div>
+            <div class="feature">
+                <h3>Wide Selection</h3>
+                <p>From single rooms to shared spaces and full houses.</p>
+            </div>
+            <div class="feature">
+                <h3>Verified Listings</h3>
+                <p>We ensure the safety and authenticity of all properties.</p>
+            </div>
+            <div class="feature">
+                <h3>Convenient Locations</h3>
+                <p>Close to universities and public transport.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Student Room Rental Service. All rights reserved.</p>
+        <p>
+            <a href="#search">Search</a> |
+            <a href="#reviews">Reviews</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+    </footer>
+</body>
+</html>
